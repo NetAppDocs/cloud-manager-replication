@@ -23,8 +23,10 @@ sidebar:
       url: /task-managing-replication.html
     - title: Concepts
       entries:
-        - title: Learn about replication policies
+        - title: Replication policies
           url: /concept-replication-policies.html
+        - title: Backup policies
+          url: /concept-backup-policies.html
     - title: Knowledge and support
       entries:
         - title: Register for support
@@ -40,20 +42,14 @@ homepage:
   tiles:
     - title: Get started
       links:
-        - title: title
-          url: page.html
-        - title: title
-          url: page.html
-        - title: title
-          url: page.html
-    - title: tile name
+        - title: Learn about the Replication service
+          url: concept-replication.html
+        - title: Set up data replication
+          url: task-replicating-data.html
+    - title: Use the Replication service
       links:
-        - title: title
-          url: page.html
-        - title: title
-          url: page.html
-        - title: title
-          url: page.html
+        - title: Manage data replication
+          url: task-managing-replication.html
     - title: Blogs & community
       links:
         - title: NetApp Community
