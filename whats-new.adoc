@@ -5,7 +5,7 @@ keywords: what's new, features, new, release notes, bugs, limitations, known iss
 summary: Learn what's new with the Replication service.
 ---
 
-= What's new with <service>
+= What's new with Replication service
 :hardbreaks:
 :nofooter:
 :icons: font
