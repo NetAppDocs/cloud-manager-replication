@@ -5,7 +5,7 @@ keywords: ontap, cluster, discover, manage, cloud manager, hybrid cloud, replica
 summary: You can replicate data between Cloud Manager working environments. You can choose a one-time data replication to move data to and from the cloud, or a recurring schedule for disaster recovery or long-term retention.
 ---
 
-= Replicating data between systems
+= Set up data replication
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -59,7 +59,7 @@ The source can be Cloud Volumes ONTAP or an on-prem ONTAP cluster.
 
 * If an on-prem ONTAP cluster is the source, ensure connectivity between your on-premises network and the AWS VPC by using a Direct Connect or VPN connection.
 
-== Setting up data replication between systems
+== Replicate data between systems
 
 You can replicate data by choosing a one-time data replication, which can help you move data to and from the cloud, or a recurring schedule, which can help with disaster recovery or long-term retention.
 
