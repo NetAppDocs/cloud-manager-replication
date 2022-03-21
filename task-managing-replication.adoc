@@ -5,7 +5,7 @@ keywords: replication policy, policy, replication, replicating, snapmirror, snap
 summary: After you set up data replication between two systems, you can manage the data replication schedule and relationship from Cloud Manager.
 ---
 
-= Managing data replication schedules and relationships
+= Manage schedules and relationships
 :hardbreaks:
 :nofooter:
 :icons: font

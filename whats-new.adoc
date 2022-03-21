@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: whats-new.html
 keywords: what's new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes
-summary: Learn what's new in <service>.
+summary: Learn what's new with the Replication service.
 ---
 
-= What's new with <service>
+= What's new
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,46 +13,20 @@ summary: Learn what's new in <service>.
 :imagesdir: ./media/
 
 [.lead]
-Learn what's new in <service>.
+Learn what's new with the Replication service.
 
-tag::whats-new[]
-== <date of release in the format dd month year like 28 Nov 2021>
+// tag::whats-new[]
+== 2 Sept 2021
 
-=== <feature title>
+=== Support for Amazon FSx for ONTAP
 
-<description>
+You can now replicate data from a Cloud Volumes ONTAP system or an on-premises ONTAP cluster to an Amazon FSx for ONTAP file system.
 
-=== <feature title>
+== 5 May 2021
 
-<description>
+=== Redesigned interface
 
-== <date of release in the format dd month year like 28 Nov 2021>
+We redesigned the Replication tab for ease of use and to match the current look and feel of the Cloud Manager user interface.
 
-=== <feature title>
-
-<description>
-
-=== <feature title>
-
-<description>
-
-== <date of release in the format dd month year like 28 Nov 2021>
-
-=== <feature title>
-
-<description>
-
-=== <feature title>
-
-<description>
-end::whats-new[]
-
-== <date of release in the format dd month year like 28 Nov 2021>
-
-=== <feature title>
-
-<description>
-
-=== <feature title>
-
-<description>
+image:replication.gif[A screenshot of the redesigned Replication tab in Cloud Manager that shows a list of volume relationships.]
+// end::whats-new[]
