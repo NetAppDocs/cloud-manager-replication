@@ -1,0 +1,34 @@
+---
+sidebar: sidebar
+permalink: concept-backup-policies.html
+keywords: snapvault, archive, archiving, retention
+summary: Unlike Mirror policies, Backup SnapVault policies replicate specific Snapshot copies to a destination volume. It is important to understand how Backup policies work if you want to use your own policies instead of the default policies.
+---
+
+= Learn about replication policies
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Unlike Mirror policies, Backup (SnapVault) policies replicate specific Snapshot copies to a destination volume. It is important to understand how Backup policies work if you want to use your own policies instead of the default policies.
+
+== Understanding the relationship between Snapshot copy labels and Backup policies
+
+A Snapshot policy defines how the system creates Snapshot copies of volumes. The policy specifies when to create the Snapshot copies, how many copies to retain, and how to label them. For example, a system might create one Snapshot copy every day at 12:10 a.m., retain the two most recent copies, and label them "daily".
+
+A Backup policy includes rules that specify which labeled Snapshot copies to replicate to a destination volume and how many copies to retain. The labels defined in a Backup policy must match one or more labels defined in a Snapshot policy. Otherwise, the system cannot replicate any Snapshot copies.
+
+For example, a Backup policy that includes the labels "daily" and "weekly" results in replication of Snapshot copies that include only those labels. No other Snapshot copies are replicated, as shown in the following image:
+
+image:diagram_replication_snapvault_policy.png["This illustration shows a Snapshot policy, a source volume, the Snapshot copies created from the Snapshot policy, and then replication of those Snapshot copies to a destination volume based on a Backup policy, which specifies replication of Snapshot copies with the "daily" and "weekly" labels."]
+
+== Default policies and custom policies
+
+The default Snapshot policy creates hourly, daily, and weekly Snapshot copies, retaining six hourly, two daily, and two weekly Snapshot copies.
+
+You can easily use a default Backup policy with the default Snapshot policy. The default Backup policies replicate daily and weekly Snapshot copies, retaining seven daily and 52 weekly Snapshot copies.
+
+If you create custom policies, the labels defined by those policies must match. You can create custom policies using System Manager.
