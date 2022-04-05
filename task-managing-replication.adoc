@@ -40,13 +40,13 @@ The following table describes the available actions:
 
 This option is typically used when the source volume cannot serve data due to events such as data corruption, accidental deletion, or an offline state.
 
-For information about configuring a destination volume for data access and reactivating a source volume, see the http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html[ONTAP 9 Volume Disaster Recovery Express Guide^].
+https://docs.netapp.com/us-en/ontap-sm-classic/volume-disaster-recovery/index.html[Learn how to configure a destination volume for data access and reactivate a source volume in the ONTAP documentation^]
 
 | Resync a| Reestablishes a broken relationship between volumes and resumes data replication according to the defined schedule.
 
 NOTE: When you resynchronize the volumes, the contents on the destination volume are overwritten by the contents on the source volume.
 
-To perform a reverse resync, which resynchronizes the data from the destination volume to the source volume, see the http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html[ONTAP 9 Volume Disaster Recovery Express Guide^].
+Learn how to perform a reverse resync, which resynchronizes the data from the destination volume to the source volume, go to the https://docs.netapp.com/us-en/ontap-sm-classic/volume-disaster-recovery/index.html[ONTAP documentation^].
 
 | Reverse Resync | Reverses the roles of the source and destination volumes. Contents from the original source volume are overwritten by contents of the destination volume. This is helpful when you want to reactivate a source volume that went offline.
 
